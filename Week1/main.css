@@ -51,10 +51,6 @@ h2, .post-date {
     font-size: 1.4rem;
 }
 
-h2 {
-   
-}
-
 li {
     text-align: center;
     padding: 10px;
@@ -114,6 +110,7 @@ img {
 section {
     border-bottom: 1.5px solid #d0d0d0;
     border-left: 1.5px solid #d0d0d0;
+    padding: 30px 5px25px 15px;
 }
 
 
