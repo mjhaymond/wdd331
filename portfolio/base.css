@@ -40,7 +40,7 @@ header h1 {
 }
 
 header, footer {
-    background-color: rgb(50, 74, 121);
+    background-color: rgb(66, 82, 121);
     color: white;
     text-align: center;
     padding: .5rem;
@@ -81,5 +81,5 @@ footer {
 
 footer p:last-of-type{
     padding-top: .3rem;
-    color: rgb(254, 174, 174);
+    color: rgb(249, 243, 243);
 }
