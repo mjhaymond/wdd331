@@ -12,7 +12,6 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: #333;
     font-weight: 600;
-    margin: 20px;
 }
 
 h1, h2, li, .post-date {
@@ -21,13 +20,12 @@ h1, h2, li, .post-date {
 
 h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     padding: 40px 0;
 }
 
 h1 a, h1 a:hover {
     color: #333;
-    text-decoration: none;
 }
 
 a {
@@ -47,8 +45,12 @@ a:active {
     color: #deb887;
 }
 
-h2, .post-date {
+h2 {
     font-size: 1.4rem;
+}
+
+.post-date {
+    font-size: 1.6rem;
 }
 
 li {
@@ -56,6 +58,8 @@ li {
     padding: 10px;
     text-transform: uppercase;
     list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 nav {
@@ -67,7 +71,7 @@ nav {
     text-transform: uppercase;
     text-align: right;
     border-bottom: 1.5px solid #d0d0d0;
-    padding: 30px 15px 15px;
+    padding: 50px 15px 15px;
 }
 
 figure {
@@ -78,8 +82,13 @@ img {
     width: 225px;
 }
 
+section {
+    padding: 30px 15px 15px 15px;
+  }
+
 p {
-    padding: 0px 15px 15px 15px;
+    font-weight: 600;
+    line-height: 1.2rem;
 }
 
 /*************LARGE VIEW************/
@@ -107,10 +116,14 @@ img {
    
 }
 
+nav {
+    margin-bottom: 15px;
+}
+
 section {
     border-bottom: 1.5px solid #d0d0d0;
     border-left: 1.5px solid #d0d0d0;
-    padding: 30px 5px25px 15px;
+    padding: 30px 5px 25px 15px;
 }
 
 
