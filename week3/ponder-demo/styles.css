@@ -1,0 +1,56 @@
+/* VARIABLES */
+/* Media Query Breakpoints */
+/* Mixins --------------------*/
+#contactform {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*-------------------------------*/
+body {
+  background-color: darkred;
+  color: black; }
+
+h1 {
+  color: white;
+  font-weight: bolder; }
+
+/* NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
+#contactform {
+  background-color: #ebc77b;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px; }
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-bottom: 15px; }
+  #contactform input, #contactform textarea {
+    background-color: #fbf3e3;
+    flex: 2; }
+  #contactform label {
+    width: 200px;
+    text-align: right;
+    padding-right: 15px; }
+  @media (max-width: 60em) {
+    #contactform fieldset > div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      padding-bottom: 0px; }
+    #contactform label {
+      text-align: left; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,93 @@
+/* VARIABLES */
+
+//colors
+$body-background-color: darkred;
+$form-background-color: rgb(235, 199, 123);
+$input-color: rgb(251, 243, 227);
+$headlines-color: rgb(0, 0, 0);
+$heading: white;
+//set breakpoint sizes
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+
+/* Media Query Breakpoints */
+@mixin breakpoint($break) {
+   @if $break == large {
+   @media (max-width: $break-large) { @content; }
+   }
+   @else if $break == medium {
+   @media (max-width: $break-medium) { @content; }
+   }
+   @else if $break == small {
+   @media (max-width: $break-small) { @content; }
+   } @else {
+   @media ($break) { @content; }
+   }
+   } 
+
+/* Mixins --------------------*/
+@mixin flex-container($axis, $wrap: nowrap) {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-flow: $axis $wrap;
+   -ms-flex-flow: $axis $wrap;
+   flex-flow: $axis $wrap;
+}
+@mixin center {
+   width: 100%;
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ #contactform {
+     @include center;
+ }
+/*-------------------------------*/
+
+body {
+   background-color: $body-background-color; 
+   color: $headlines-color;         
+}
+
+h1 {
+   color: $heading;
+   font-weight: bolder;
+}
+
+/* NESTED WITH MEDIA QUERY FOR DIFFERENT SCREENS */
+#contactform {
+   background-color: $form-background-color;
+   width: 100%;
+   max-width: 700px;
+   margin-left: auto;
+   margin-right: auto; 
+   padding: 5px;
+
+   fieldset > div {
+       @include flex-container(row, wrap);
+       padding-bottom: 15px;
+   }
+   input, textarea {
+       background-color: $input-color;
+       flex: 2;
+   }
+   
+   label {
+       width: 200px;
+       text-align: right;
+       padding-right: 15px;
+     }          
+   @include breakpoint(large) {
+     & {
+     fieldset > div { @include flex-container(column);
+       padding-bottom: 0px; }
+     }
+     label {
+       text-align: left;
+     }
+   }
+
+}    
