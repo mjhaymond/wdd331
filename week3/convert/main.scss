@@ -45,7 +45,10 @@ body {
   font-weight: 600;
 }
 
-h1, h2, li, .post-date {
+h1, 
+h2, 
+li, 
+.post-date {
   font-family: Lora, serif;
 }
 
@@ -82,11 +85,15 @@ a {
 }
 
 h2 {
-  font-size: $small-font;
+  font-size: $medium-font;
 }
 
 .post-date {
   font-size: $medium-font;
+  text-transform: uppercase;
+  text-align: right;
+  border-bottom: $border-specs;
+  padding: 50px 15px 15px;
 }
 
 li {
@@ -103,20 +110,13 @@ nav {
   border-bottom: $border-specs;
 }
 
-.post-date {
-  text-transform: uppercase;
-  text-align: right;
-  border-bottom: 1.5px solid #d0d0d0;
-  padding: 50px 15px 15px;
-}
-
 figure {
   text-align: center;
   padding: 20px;
 }
 
 img {
-  width: 225px;
+  width: $large-image;
 }
 
 section {
@@ -125,7 +125,7 @@ section {
 
 p {
   font-weight: 600;
-  line-height: 1.2rem;
+  line-height: $small-font;
 }
 
 /*************LARGE VIEW************/
@@ -140,10 +140,12 @@ p {
   }
 
   img {
-    width: 200px;
+    width: $small-image;
   }
 
-  .post-date, h2 {
+  .post-date, 
+  h2 {
+    font-size: $medium-font;
     border-bottom: none;
   }
 

@@ -14,7 +14,10 @@ body {
   color: #333;
   font-weight: 600; }
 
-h1, h2, li, .post-date {
+h1,
+h2,
+li,
+.post-date {
   font-family: Lora, serif; }
 
 /* ---NESTING--- */
@@ -38,10 +41,14 @@ a {
     color: #deb887; }
 
 h2 {
-  font-size: 1.2rem; }
+  font-size: 1.6rem; }
 
 .post-date {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: right;
+  border-bottom: 1.5px solid #d0d0d0;
+  padding: 50px 15px 15px; }
 
 li {
   text-align: center;
@@ -54,12 +61,6 @@ li {
 nav {
   border-top: 1.5px solid #d0d0d0;
   border-bottom: 1.5px solid #d0d0d0; }
-
-.post-date {
-  text-transform: uppercase;
-  text-align: right;
-  border-bottom: 1.5px solid #d0d0d0;
-  padding: 50px 15px 15px; }
 
 figure {
   text-align: center;
@@ -94,7 +95,9 @@ p {
   img {
     width: 200px; }
 
-  .post-date, h2 {
+  .post-date,
+  h2 {
+    font-size: 1.6rem;
     border-bottom: none; }
 
   nav {
