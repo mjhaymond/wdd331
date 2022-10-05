@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACL,OAAO,EAAE,EAAE",
+"sources": ["_organisms.scss"],
+"names": [],
+"file": "_organisms.css"
+}
