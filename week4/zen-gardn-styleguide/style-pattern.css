@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap");
+/* Fonts */
+/*h1*/
+/*h2 & h3*/
+/*p*/
+/* Colors */
+/*$grey-sidebar: rgba(51, 55, 69, 0.9);   ????????*/
+/* Font Colors */
 h2,
 h3,
 h4 {
-  font-family: "arial narrow", Arial, Verdana, sans-serif;
+  font-family: "Fredericka the Great", Arial, cursive;
   margin: 0;
 }
 
 h1 {
-  background: #ea2e49;
+  background: #1a68ad;
   color: #fff;
   display: inline-block;
   font-weight: normal;
@@ -39,7 +47,7 @@ h4 {
 }
 
 p {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Cabin", Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
@@ -48,13 +56,13 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #05173d;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
-  border-color: #ea2e49;
+  border-color: #1a68ad;
 }
 
 * {
@@ -62,15 +70,15 @@ a:hover {
 }
 
 html {
-  background-color: #daede2;
+  background-color: #05173d;
   padding: 5%;
 }
 
 body {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Cabin", Arial, sans-serif;
   font-size: 85%;
-  color: #333;
-  background-color: #77c4d3;
+  color: #05173d;
+  background-color: #05173d;
   margin: 0;
   padding: 1em;
 }
@@ -101,19 +109,19 @@ section {
 }
 
 .primary {
-  background-color: #77c4d3;
+  background-color: #05173d;
 }
 
 .accent1 {
-  background-color: #ea2e49;
+  background-color: #1a68ad;
 }
 
 .accent2 {
-  background-color: rgba(246, 247, 146, 0.9);
+  background-color: #7afacc;
 }
 
 .text-dark {
-  background-color: #333;
+  background-color: #05173d;
 }
 
 .element {
@@ -126,7 +134,7 @@ section {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #333;
+  color: #05173d;
 }
 
 .uppercase-light {
