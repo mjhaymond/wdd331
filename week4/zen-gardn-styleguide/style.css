@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #daede2;
+  padding: 5%;
+}
+
+body {
+  font-family: verdana, arial, sans-serif;
+  font-size: 85%;
+  color: #333;
+  background-color: #77c4d3;
+  margin: 0;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */
