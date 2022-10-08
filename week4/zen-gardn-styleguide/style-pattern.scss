@@ -36,6 +36,11 @@ section {
     flex: 1 1 25%;
   }
 }
+
+#intro-p {
+  color: $text-light;
+}
+
 .swatch {
   width: 100%;
   height: 100px;
@@ -49,6 +54,12 @@ section {
 }
 .accent2 {
   background-color: $accent2;
+}
+.accent3 {
+  background-color: $accent3;
+}
+.accent4 {
+  background-color: $accent4;
 }
 .text-dark {
   background-color: $text-dark;

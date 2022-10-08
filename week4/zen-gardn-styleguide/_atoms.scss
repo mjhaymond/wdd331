@@ -30,6 +30,8 @@ h4 {
   font-family: $fonts-headline;
   margin: 0;
 }
+
+
 h1 {
   background: $accent1;
   color: $text-light;
@@ -37,27 +39,51 @@ h1 {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  font-family: $fonts-subhead;
 }
 h2 {
+  background: $primary;
   color: $text-light;
   font-weight: 900; /* Heavy */
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: 1px;
   line-height: 1em;
+  font-family: $fonts-headline;
 }
 h3 {
+  color: $text-dark;
   font-size: 2.25em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
+  line-height: 1em;  
+  font-family: $fonts-body;
 }
 h4 {
-  font-size: 1.5em;
+  color: $text-dark;
+  font-size: 2em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0;
+  font-family: $fonts-body;
+}
+h5 {
+  color: $text-dark;
+  font-size: 2em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+  font-family: $fonts-headline;
+}
+h6 {
+  color: $text-dark;
+  font-size: 2em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+  font-family: $fonts-subhead;
 }
 
 p {

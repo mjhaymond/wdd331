@@ -1,45 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&family=Fredericka+the+Great&display=swap");
+/* Fonts */
+/*h1*/
+/*h2 & h3*/
+/*p*/
+/* Colors */
+/*$grey-sidebar: rgba(51, 55, 69, 0.9);   ????????*/
+/* Font Colors */
 h2,
 h3,
 h4 {
-  font-family: "arial narrow", Arial, Verdana, sans-serif;
+  font-family: "Fredericka the Great", Arial, cursive;
   margin: 0;
 }
 
 h1 {
-  background: #ea2e49;
+  background: #1a68ad;
   color: #fff;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  font-family: "Cabin Sketch", Arial, cursive;
 }
 
 h2 {
+  background: #05173d;
   color: #fff;
   font-weight: 900; /* Heavy */
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: 1px;
   line-height: 1em;
+  font-family: "Fredericka the Great", Arial, cursive;
 }
 
 h3 {
+  color: #05173d;
   font-size: 2.25em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
+  font-family: "Cabin", Arial, sans-serif;
 }
 
 h4 {
-  font-size: 1.5em;
+  color: #05173d;
+  font-size: 2em;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0;
+  font-family: "Cabin", Arial, sans-serif;
+}
+
+h5 {
+  color: #05173d;
+  font-size: 2em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+  font-family: "Fredericka the Great", Arial, cursive;
+}
+
+h6 {
+  color: #05173d;
+  font-size: 2em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+  font-family: "Cabin Sketch", Arial, cursive;
 }
 
 p {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Cabin", Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
@@ -48,13 +82,13 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #05173d;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
-  border-color: #ea2e49;
+  border-color: #1a68ad;
 }
 
 /*# sourceMappingURL=atoms.css.map */
