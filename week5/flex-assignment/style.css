@@ -1,0 +1,37 @@
+.card-grid {
+    
+}
+
+/*---------------ROWS-------------*/
+.row-grid {
+   display: flex;
+   
+   flex-flow: row wrap;
+   
+   min-width: 0;
+        
+}
+
+.card { 
+    border: 2px dashed purple;
+    min-width: 0;
+    justify-content: space-between;
+ 
+   
+}
+
+h2 {
+    
+    
+}
+
+img {
+    
+    
+  }
+
+/*---------------COLUMNS-------------*/
+.col-grid {
+    border: 2px dashed green;
+
+}
