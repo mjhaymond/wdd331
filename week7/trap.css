@@ -1,0 +1,196 @@
+html,
+ body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 25vmin;
+  width: 25vmin;
+  background-color: teal;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  height: 25vmin;
+  width: 25vmin;
+  background-color: teal;
+}
+
+.container-one {
+  padding: 1vmin;
+}
+          
+.orbiting-circle {
+  height: 25%;
+  width: 25%;
+  background-color: darkred;
+  border-radius: 50%;
+  animation: orbit 3s linear infinite;
+}
+
+@keyframes orbit {
+              0% { transform: translate(0,0); }
+              5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+              25% { transform: translate(300%,0%); } /* start moving again */
+              30% { transform: translate(300%,0%); } /* pause */
+              50% { transform: translate(300%,300%); } /* move */
+              55% { transform: translate(300%,300%); }
+              75% { transform: translate(0%,300%); }
+              80% { transform: translate(0%,300%); }
+              100% { transform: translate(0%,0%); }
+          }
+
+/*//////// Container two ////////*/
+.container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      
+.morphing-circle {
+  height: 25%;
+  width: 25%;
+   background-color:darkred;	
+          border-radius: 50%;
+          transition: border-radius .5s ease, 
+                      background-color .5s ease, 
+                      transform .5s ease .5s;
+  animation: morphing-circle-square 3s linear infinite;
+      }
+      .container-two:hover .morphing-circle {
+          border-radius: 0;
+          background-color:  white;
+          transform: rotate(90deg);
+      }
+
+@keyframes morphing-circle-square {
+          0% {border-radius: 50%}
+          25% { /*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+              border-radius: 50%;
+              background-color: darkred;
+          }
+          50% { /* now change to white square...but don't start rotating yet! */
+              border-radius: 0%;
+              background-color: white;
+              transform: rotate(0deg);
+          }
+          75% { /* stay a white square, but rotate 90deg */
+              border-radius: 0%;
+              background-color: white;
+              transform: rotate(90deg);   
+          }
+          100% { /* stay rotated at 90, but change back to a circle */
+              border-radius: 50%;
+              background-color: darkred;
+              transform: rotate(90deg);
+          }
+      }
+      
+/*//////// Container three ////////*/
+.container-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      
+.half-circle {
+  height: 25%;
+  width: 12.5%; /*size of half circle*/
+  background-color:darkred;
+}
+
+.left {
+  border-bottom-left-radius: 100% 50%; /*this shapes the left side of circle*/
+  border-top-left-radius: 100% 50%;
+  animation: left 2s infinite; /* timing for when circle splits */
+}
+
+.right {
+  border-bottom-right-radius: 100% 50%; /*this shapes the right side of circle*/
+  border-top-right-radius: 100% 50%;
+  animation: right 2s infinite; /* timing for when circle splits */
+}
+
+@keyframes left { /* Left side moves out, holds for a secound, moves back */
+     0% {
+    transform: translate3d(0, 0, 0); /*start posisiton*/
+    }
+    15% {
+    transform: translate3d(0, 0, 0); /*holds the starting position*/
+    }
+    30% {
+    transform: translate3d(-12px, 0, 0); /*moves to the left*/
+    }
+   70% {
+    transform: translate3d(-12px, 0, 0); /*holds the position open*/
+    }
+    85% {
+    transform: transleated3d(0, 0, 0); /*moves back to starting position*/
+    }
+    100% {
+    transform: translate3d(0, 0, 0); /*holds the position closed*/
+    }
+}
+
+@keyframes right { /* Right side moves out, holds for a secound, moves back */
+     0% {
+    transform: translate3d(0, 0, 0); /*starting position*/
+    }
+    15% {
+    transform: translate3d(0, 0, 0); /*holds the starting position*/
+    }
+    30% {
+    transform: translate3d(12px, 0, 0); /*moves to the right*/
+    }
+    70% {
+    transform: translate3d(12px, 0, 0); /*holds the position open*/
+    }
+    85% {
+    transform: transleated3d(0, 0, 0); /*moves back to starting position*/
+    }
+    100% {
+    transform: translate3d(0, 0, 0); /*holds the position closed*/
+    }
+}
+
+/*//////// Container four ////////*/
+
+.container-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      
+.beating-circle {
+  height: 25%;
+  width: 25%; 
+  background-color:darkred;
+  border-radius: 50%; /*making the square a circle*/
+  animation: beating 2s linear infinite; /* Time between beats */
+}
+
+@keyframes beating {
+   10% {
+    transform: scale(1); /*starting point*/
+    }
+    15% {
+    transform: scale(1.30); /*circle expands on the beat*/
+    }
+    20% {
+    transform: scale(1); /*makes the circle a little smaller*/
+    }
+    25% {
+    transform: scale(1.30); /*circle expands on the beat agian*/
+    }
+    30% {
+    transform: scale(1); /*brings circle back to its staring size and rests*/
+    }
+}
