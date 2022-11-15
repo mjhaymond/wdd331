@@ -3,7 +3,7 @@ var icon1 = document.getElementById("a");
 var icon2 = document.getElementById("b");
 var icon3 = document.getElementById("c");
 var nav = document.getElementById('nav');
-var blue = document.getElementById("blue");
+var blue = document.getElementById("purple");
 
 icon.addEventListener('click', function() {
   icon1.classList.toggle('a');
